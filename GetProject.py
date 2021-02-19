@@ -1,15 +1,16 @@
 #!/usr/bin/python3
 
 from colorama import Fore, Style
+from getpass import getpass
 import json
 import requests
 import time
 
 
 url = 'https://intranet.hbtn.io/'
-api_key = 'f7f3415ad700490a7b94d2996061d774' #input("What is you API key? (In tools in the intranet) ")
-user_email = '1646@holbertonschool.com' #input("What is your holberton email address? ")
-user_pass = '2Tu4!Z&mPrKQ' #input("What is you intranet password? ") #We should see how to hide this if we have time
+api_key = input("What is you API key? (In tools in the intranet) ")
+user_email = input("What is your Holberton email address? ")
+user_pass = getpass("What is you intranet password? ") #We should see how to hide this if we have time
 token_url = 'users/auth_token.json'
 payload = {"api_key": api_key, "email": user_email, "password": user_pass, "scope": "checker"}
 try:
@@ -41,10 +42,10 @@ for item in projects_request['tasks']:
             continue
     except:
         pass
-    print("\tWaiting on checker...\n")
+    print("\tWaiting on checker...")
 
     while(True):
-        time.sleep(5)
+        time.sleep(10)
         correction = requests.get(url + 'correction_requests/' + str(correction_request['id']) + '.json?auth_token=' + auth_token).json()
         if correction['status'] == 'Done':
             i = 0
@@ -59,9 +60,5 @@ for item in projects_request['tasks']:
                 print("\tCongratulations All Checks Passed!\n")
             break
         elif correction['status'] == 'Fail':
-            print("Checker Fail, post in #checkerisbroken")
+            print("Checker Fail, post in #checkerisbroken\n")
             break
-
-    #print(correction)
-    #exit()
-    
