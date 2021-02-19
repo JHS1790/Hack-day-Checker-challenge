@@ -1,7 +1,7 @@
 # Hack-day-Checker-challenge
 
 ## About
-This project is for Holberton students in their final semester of the foundations year and beyond. The focus of this project is streamlining the process of checking the correctness of various coding and text answers to ordered tasks within individual projects. The standard practice for students is to check their work via the school intranet web application known as the checker. This process can be time consuming as the checker can only check a few tasks concurrently. With this application a student will be able to connect to the school's API and check an entire project's tasks through a simple submission.
+This project is for Holberton students in their final semester of the foundations year and beyond. The focus of this project is streamlining the process of checking the correctness of various coding and text answers to ordered tasks within individual projects. The standard practice for students is to check their work via the school intranet web application known as the checker. This process can be time consuming as the checker can only check a few tasks concurrently. With this application a student will be able to connect to the school's API and check an entire project's tasks through a simple submission. By being accessable via the commandline this tool will also help students avoid context switching and wasted time moving between the shell and the intranet web application.
 
  
 ### Pre-Requisits
@@ -11,7 +11,7 @@ This project is for Holberton students in their final semester of the foundation
 * Colorama
 * Requests
 * Time
-*Getpass
+* Getpass
 
 
 ### Installation
