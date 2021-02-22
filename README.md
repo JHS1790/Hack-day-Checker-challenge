@@ -29,3 +29,4 @@ This project is open source and fair game for anyone to use, and we do hope othe
 ### Authors
 Jacob Scott - [JHS1790](https://github.com/JHS1790) - [Email](mailto:1790@holbertonschool.com)
 Tim McMacken - [TMcMac](https://github.com/TMcMac) - [Email](mailto:1646@holbertonschool.com)
+Reese Hicks - [dreeseh](https://github.com/dreeseh) - [Email](mailto:1859@holbertonschool.com)
